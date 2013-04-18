@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Chatty</title>
+        <meta name="description" content="Chat with yo friends!">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+
+            <div class="main-box clearfix">
+                <div class="left-box">
+                    <p id="users">Users</p>
+                    <ul class="user-list">
+                    </ul>
+                </div>
+                <div class="right-box">
+                    <div class="message-box">
+                        <p class="status">Status: Disconnected</p>
+                        <ul class="message-list">
+                        </ul>
+                    </div>
+                    <form id="chat-form">
+                        <input type="text" name="message" id="textbox" placeholder="Type your message...">
+                        <input type="submit" class="submit-button" value="Send">
+                    </form>
+                </div>
+            </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
