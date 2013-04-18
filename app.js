@@ -34,4 +34,5 @@ io.sockets.on('connection', function(client) {
     });
 });
 
-server.listen(8080);
+port = process.env.PORT || 8000;
+server.listen(port);
